@@ -10734,3 +10734,10 @@ body, html {
   .putaindemarge {
     width: 90%;
   }
+
+  .column50 {
+  float: left;
+  width: 50%;
+  padding: 5px; 
+
+}
