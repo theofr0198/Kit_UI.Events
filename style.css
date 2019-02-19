@@ -2048,7 +2048,7 @@ pre code {
   border-color: #5a5a5a;
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(26, 26, 26, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(26, 26, 26, 0.25);
+          box-shadow: 0 0 0 0.2rem #D3A723;
 }
 
 .form-control::-webkit-input-placeholder {
