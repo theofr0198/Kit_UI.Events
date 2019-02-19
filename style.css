@@ -10717,3 +10717,20 @@ body, html {
 }
 
 
+/* putain dalignement de colonnne de merde */
+
+.column1 {
+  float: left;
+  width: 66.66%;
+  padding: 5px; 
+
+}
+
+  .column2 {
+  float: left;
+  width: 33.33%;
+  padding: 5px; }
+
+  .putaindemarge {
+    width: 90%;
+  }
