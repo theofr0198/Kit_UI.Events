@@ -10736,8 +10736,20 @@ body, html {
   }
 
   .column50 {
-  float: left;
+  
   width: 50%;
   padding: 5px; 
 
+
+
+}
+
+.centrertxt {
+  min-height: 10em;
+    display: table-cell;
+    vertical-align: middle 
+}
+
+.colorform {
+  background-color: #fff;
 }
