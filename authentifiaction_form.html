@@ -94,6 +94,49 @@
 </form>
 </div>
 
+<br>
+<br>
+
+<h2>Edit User</h2>
+
+<div class="card border-warning mb-3" style="max-width: 40rem;">
+
+<div class="form-group">
+     <label for="user_first_name">First name</label><br>
+     <input type="text" class="form-control" name="user[first_name]" id="user_first_name">
+   </div> 
+
+<div class="form-group">
+     <label for="user_last_name">Last name</label><br>
+     <input type="text" class="form-control" name="user[last_name]" id="user_last_name">
+   </div>
+
+ <div class="form-group">
+     <label for="user_description">Description</label><br>
+     <input type="text" class="form-control" name="user[description]" id="user_description">
+   </div>
+
+<div class="form-group">
+    <label for="user_password">Password</label>
+    <em>(6 characters minimum)</em>
+    <br>
+    <input autocomplete="new-password" class="form-control" type="password" name="user[password]" id="user_password" aria-autocomplete="list">
+  </div>
+
+<div class="form-group">
+    <label for="user_password_confirmation">Password confirmation</label><br>
+    <input autocomplete="new-password" class="form-control" type="password" name="user[password_confirmation]" id="user_password_confirmation">
+  </div>
+
+  <h3>Cancel my account</h3>
+  <p>Unhappy? </p>
+
+  <form class="button_to" method="post" action="/users"><input type="hidden" name="_method" value="delete"><input class= "btn btn-outline-danger" data-confirm="Are you sure?" type="submit" value="Cancel my account"><input type="hidden" name="authenticity_token" value="dY+6sBOPHcg9fQKWdkpnMlLbLzy//4unfsQ1DjN8EXJfPcAIGXv20UVKSGlgckcZT23OfcIYqgzCmKtyK4bHCw=="></form>
+<br>
+  <a href="https://test-project11111.herokuapp.com/">Back</a>
+
+</div>
+
 </center>
 
 
