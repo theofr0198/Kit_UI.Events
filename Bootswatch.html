@@ -1,7 +1,150 @@
 <link type="text/css" rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <br>
-<h1><center>Navbar</center></h1>
+<h1><center><U>Formulaires :</U></center></h1></center>
+  <br>
+<center>
+  <h2>Sign in</h2>
+<div class="card border-warning mb-3" style="max-width: 40rem;">
+ <div class="form-group">
+     <label for="user_first_name">First name</label><br>
+     <input type="text" class="form-control" name="user[first_name]" id="user_first_name">
+   </div> 
+
+<div class="form-group">
+     <label for="user_last_name">Last name</label><br>
+     <input type="text" class="form-control" name="user[last_name]" id="user_last_name">
+   </div>
+
+   <div class="form-group">
+    <label for="user_email">Email</label><br>
+    <input autofocus="autofocus" autocomplete="email"  class="form-control" type="email" value="" name="user[email]" id="user_email">
+  </div>
+
+ <div class="form-group">
+     <label for="user_description">Description</label><br>
+     <input type="text" class="form-control" name="user[description]" id="user_description">
+   </div>
+
+ <div class="form-group">
+    <label for="user_password">Password</label>
+    <em>(6 characters minimum)</em>
+    <br>
+    <input autocomplete="new-password" class="form-control" type="password" name="user[password]" id="user_password" aria-autocomplete="list">
+  </div>
+
+<div class="form-group">
+    <label for="user_password_confirmation">Password confirmation</label><br>
+    <input autocomplete="new-password" class="form-control" type="password" name="user[password_confirmation]" id="user_password_confirmation">
+  </div>
+
+  <div class="actions">
+    <input class= "btn btn-outline-success" type="submit" name="commit" value="Sign up" data-disable-with="Sign up">
+  </div>
+
+  <br>
+  <br>
+</div>
+    <h2>Log in</h2>
+<div class="card border-warning mb-3" style="max-width: 40rem;">
+    <div class="form-group">
+    <label for="user_email">Email</label><br>
+    <input autofocus="autofocus" autocomplete="email"  class="form-control" type="email" value="" name="user[email]" id="user_email">
+  </div>
+
+    <div class="form-group">
+    <label for="user_password">Password</label><br>
+    <input autocomplete="current-password" class="form-control" type="password" name="user[password]" id="user_password">
+  </div>
+
+ <div class="form-group">
+      <input name="user[remember_me]" type="hidden" value="0"><input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me">
+      <label for="user_remember_me">Remember me</label>
+    </div>
+
+<br>
+  <div class="actions">
+    <input class= "btn btn-outline-success" type="submit" name="commit" value="Log in" data-disable-with="Log in">
+  </div>
+
+  <a href="/users/sign_up">Sign up</a>
+  <br>
+
+  <a href="/users/password/new">Forgot your password?</a>
+
+<br>
+</div>
+<br> 
+
+<br>
+  <h2>Forgot your password?</h2>
+<div class="card border-warning mb-3" style="max-width: 40rem;">
+  <form class="new_user" id="new_user" action="/users/password" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="bFGsw61BG/bm8UNYw7pxwNm+oBpO0glidF9cBg9uBHAC7JQ5Qe2/KXCCRvypFjITgQdT7nIJGu/uj03MOPVF0w==">
+  
+
+  <div class="form-group">
+    <label for="user_email">Email</label><br>
+    <input autofocus="autofocus" class="form-control" autocomplete="email" type="email" value="" name="user[email]" id="user_email">
+  </div>
+
+  <div class="actions">
+    <input  class= "btn btn-outline-success" type="submit" name="commit" value="Send me reset password instructions" data-disable-with="Send me reset password instructions">
+  </div>
+  <br>
+  <a href="/users/sign_in">Log in</a>
+  /     
+  <a href="/users/sign_up">Sign up</a>
+
+</form>
+<br>
+</div>
+
+<br>
+<br>
+
+<h2>Edit User</h2>
+
+<div class="card border-warning mb-3" style="max-width: 40rem;">
+
+<div class="form-group">
+     <label for="user_first_name">First name</label><br>
+     <input type="text" class="form-control" name="user[first_name]" id="user_first_name">
+   </div> 
+
+<div class="form-group">
+     <label for="user_last_name">Last name</label><br>
+     <input type="text" class="form-control" name="user[last_name]" id="user_last_name">
+   </div>
+
+ <div class="form-group">
+     <label for="user_description">Description</label><br>
+     <input type="text" class="form-control" name="user[description]" id="user_description">
+   </div>
+
+<div class="form-group">
+    <label for="user_password">Password</label>
+    <em>(6 characters minimum)</em>
+    <br>
+    <input autocomplete="new-password" class="form-control" type="password" name="user[password]" id="user_password" aria-autocomplete="list">
+  </div>
+
+<div class="form-group">
+    <label for="user_password_confirmation">Password confirmation</label><br>
+    <input autocomplete="new-password" class="form-control" type="password" name="user[password_confirmation]" id="user_password_confirmation">
+  </div>
+
+  <h3>Cancel my account</h3>
+  <p>Unhappy? </p>
+
+  <form class="button_to" method="post" action="/users"><input type="hidden" name="_method" value="delete"><input class= "btn btn-outline-danger" data-confirm="Are you sure?" type="submit" value="Cancel my account"><input type="hidden" name="authenticity_token" value="dY+6sBOPHcg9fQKWdkpnMlLbLzy//4unfsQ1DjN8EXJfPcAIGXv20UVKSGlgckcZT23OfcIYqgzCmKtyK4bHCw=="></form>
+<br>
+  <a href="https://test-project11111.herokuapp.com/">Back</a>
+  <br>
+
+</div>
+
+</center>
+<h1><center><U>Navbar :<U></center></h1>
 <br>
 <h4><center> Deconnecté : </center></h4>
 <br>
@@ -35,7 +178,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link type="text/css" rel="stylesheet" href="style.css">
+  <link type="text/css" rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -66,11 +209,37 @@
               </nav>
             </div>
 </body>
-
+<br>
+<h1><center><U>Banniere :</U></center></h1>
 <br>
 
 
-<h1><center>Carte pour rejoindre evenement</center> </h1>
+<h4><center>Déconnecté :</center></h4>
+<br>
+<div class="hero-image">
+ <div class="hero-text">
+   <p style="font-size:70px;color : #D3A723">Bienvenue !</p>
+   <p style="font-size:40px">Voici tout les Events :</p>
+   
+ </div>
+</div>
+<br>
+<h4><center>Connecté :</center></h4>
+<br>
+<div class="hero-image">
+ <div class="hero-text">
+   <p style="font-size:  70px; color : #D3A723">Bienvenue (user) !</p>
+    <p style="font-size:  40px">Voici tout les Events :</p>
+    <br>
+    <br>
+    <button class="btn btn-outline-success my-2 my-sm-0" href="#">Creer une evenement</button>
+ </div>
+</div>
+<br>
+<br>
+<h1><center><U>Cartes</U></center></h1>
+<br>
+<h3><center>Carte pour rejoindre evenement</center> </h3>
 <br> 
 <center>
  <div class="card border-warning mb-3" style="max-width: 20rem;">
@@ -85,7 +254,7 @@
 
 <br>
 
-<h1><center> Carte des evenements </center></h1>
+<h3>><center> Carte des evenements </center></h3>
 <br>
 <center>
  <div class="card border-warning mb-3" style="max-width: 20rem;">
@@ -99,7 +268,7 @@
             </center>
 
 <br>
- <h1><center> Carte pour editer (admin)  </center></h1>
+ <h3><center> Carte pour editer (admin)  </center></h3>
  <br>
  <center>
  <div class="card border-warning mb-3" style="max-width: 20rem;">
@@ -114,7 +283,7 @@
 
 
 <br>
-              <h1><center> Carte des villes </center></h1>
+              <h3><center> Carte des villes </center></h3>
               <br>
               <center>
  <div class="card border-warning mb-3" style="max-width: 20rem;">
@@ -127,7 +296,7 @@
               </div>
             </center>
 <br>
-              <h1><center> Carte des participants </center></h1>
+              <h3><center> Carte des participants </center></h3>
               <br>
 
 
@@ -162,9 +331,12 @@
 
 
 
-<h1><center> zone commentaires </center></h1>
+<h1><center><U> Zone commentaires :</U> </center></h1>
+<br>
 
+  
 	<div class="container">
+    
             <div class="row">
                 <div class="col-md-8">
                   <div class="page-header">
@@ -242,35 +414,14 @@
                     
                 </div>
             </div>
+
         </div>
-<br>
-        <h1><center>Banniere</center></h1>
-<br>
+      
 
 
-<h4><center>Déconnecté :</center></h4>
 <br>
-<div class="hero-image">
- <div class="hero-text">
-   <p style="font-size:70px;color : #D3A723">Bienvenue !</p>
-   <p style="font-size:40px">Voici tout les Events :</p>
-   
- </div>
-</div>
-<br>
-<h4><center>Connecté :</center></h4>
-<br>
-<div class="hero-image">
- <div class="hero-text">
-   <p style="font-size:  70px; color : #D3A723">Bienvenue (user) !</p>
-  	<p style="font-size:  40px">Voici tout les Events :</p>
-  	<br>
-  	<br>
-    <button class="btn btn-outline-success my-2 my-sm-0" href="#">Creer une evenement</button>
- </div>
-</div>
-<br>
-<h1><center> Contact </center></h1>
+        
+<h1><center><U> Contact :</U> </center></h1>
 <br>
 
 <center>
@@ -292,7 +443,7 @@
 </center>
 
 
-<h1><center> Footer </center></h1>
+<h1><center> <U>Footer :</U> </center></h1>
 <br>
 <br>
 <div class="footer">
