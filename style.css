@@ -10680,7 +10680,7 @@ th {
 }
 
 .card-title, .card-header {
-  color: #fff;
+  color: #191616;
 }
 
 .footer {
@@ -10741,7 +10741,9 @@ body, html {
   .column2 {
   float: left;
   width: 33.33%;
-  padding: 5px; }
+  padding: 5px; 
+  background-color: #b1b2b5;
+}
 
   .putaindemarge {
     width: 90%;
